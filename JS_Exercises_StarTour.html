@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>JS Exercises Star Tour</title>
+    <meta charset="utf-8" />
+    <style>
+        body {
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <script>
+                
+        //for (i = 1; i <= 5; i++) {
+        //    var star = "";
+        //    for (x = 1; x <= i; x++) {
+                
+        //        star = star + "*";
+        //        //document.write(star);            
+        //    }
+        //        document.write(star+"<br>");
+        //}
+        for (var i = 1; i <= 5; i++) {
+            var star = "";
+          
+                for (var x = 1; x <= 5-i; x++) {
+                    star = star + "&nbsp";
+                }
+                for (var y = 1 ; y <= -1 + i * 2;y++) {
+                    star = star + "*";
+                }
+                for (var x = 1; x <= 5-i; x++) {
+                    star = star + "&nbsp";
+                }
+                document.write(star + "<br/>");
+            
+
+        }
+        
+        
+
+    </script>
+</body>
+</html>
+
